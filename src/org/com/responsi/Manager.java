@@ -26,18 +26,22 @@ public class Manager extends Orang implements Gaji{
 	}
 	
 	public void allPekerja(){
-		System.out.println(this.getNamaDepan()+" "+this.getNamaBelakang());
-		System.out.println(this.getJamKerja()+" "+this.getHonor());
-		
+		System.out.println("Data Manager");
+		System.out.println("=================");
+		System.out.println("Nama      : "+this.getNamaDepan()+" "+this.getNamaBelakang());
+		System.out.println("Jam Kerja : "+this.getJamKerja()+" Honor : Rp."+this.getHonor());
+		System.out.println("Data Pegawai");
+		System.out.println("=================");
 		for(Pekerja p : pekerja){
-			System.out.println(p.getNamaDepan()+" "+p.getNamaBelakang());
-			System.out.println(p.getJamKerja()+" "+p.getHonor());
+			System.out.println("Nama      : "+p.getNamaDepan()+" "+p.getNamaBelakang());
+			System.out.println("Jam Kerja : "+p.getJamKerja()+" Honor : Rp."+p.getHonor());
 		}
-		
+		System.out.println("Data Proyek");
+		System.out.println("=================");
 		for(Proyek p : listProyek){
-			System.out.println(p.getNamaProyek());
-			System.out.println(p.getLamaProyek());
-			System.out.println(""+p.getBiayaProyek());
+			System.out.println("Nama  : "+p.getNamaProyek());
+			System.out.println("Waktu : "+p.getLamaProyek()+" hari");
+			System.out.println("Biaya : Rp."+p.getBiayaProyek());
 		}
 	}
 
